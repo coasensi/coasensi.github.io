@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles Odend’hal's Résumé</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Charles Odend’hal</h1>
+        <p>Sales and Trading Analyst | Capital Markets | Financial Engineering</p>
+        <nav>
+            <ul>
+                <li><a href="#experience" class="scroll">Experience</a></li>
+                <li><a href="#education" class="scroll">Education</a></li>
+                <li><a href="#projects" class="scroll">Projects</a></li>
+                <li><a href="#blog" class="scroll">Blog</a></li>
+                <li><a href="#contact" class="scroll">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Professional Experience Section -->
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <div class="job">
+                <h3>Capital Markets Intern</h3>
+                <p>Agence Française de Développement | 2024</p>
+                <p>Responsibilities and key achievements...</p>
+            </div>
+            <!-- Add more jobs here -->
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <div class="school">
+                <h3>Université Paris Dauphine – PSL</h3>
+                <p>Bachelor's in Economics & Financial Engineering</p>
+            </div>
+            <div class="school">
+                <h3>Queensland University of Technology</h3>
+                <p>Exchange Program in Financial Engineering</p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Personal Projects</h2>
+            <div class="project">
+                <h3>Machine Learning Finance Application</h3>
+                <p>Details about your project...</p>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog">
+            <h2>Blog</h2>
+            <article class="blog-post">
+                <h3><a href="blog1.html">Understanding Capital Markets</a></h3>
+                <p><small>Published on October 5, 2024</small></p>
+                <p>An overview of capital markets and their importance in the financial ecosystem...</p>
+            </article>
+            <article class="blog-post">
+                <h3><a href="blog2.html">How AI is Disrupting Trading</a></h3>
+                <p><small>Published on September 25, 2024</small></p>
+                <p>A look into how artificial intelligence is reshaping the trading landscape...</p>
+            </article>
+            <!-- Add more blog posts here -->
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me at <a href="mailto:charles.odendhal@example.com">charles.odendhal@example.com</a></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Charles Odend’hal</p>
+    </footer>
+
+    <!-- Smooth Scrolling Script -->
+    <script>
+        document.querySelectorAll('.scroll').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
